@@ -1,0 +1,31 @@
+body {
+	font-family: 'Space Mono', monospace;
+	background: radial-gradient(circle, #C6D9F7, white);
+}
+h1 {
+	font-family: 'Bungee Shade', cursive;
+	font-size: 3em;
+	margin: 5% 0%;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+button {
+	background-color: #1A4FA3;
+	font-size: 1.3em;
+	color: #fff;
+	margin: 3% 0%;
+	padding: .3em;
+	cursor: pointer;
+	font-family: 'Space Mono', monospace;
+}
+button:hover {
+	background-color: #143B7A;
+	color: #D2D4D6;
+}
+.password {
+	border: solid 1px #1A4FA3;
+	font-size: 2em;
+}
