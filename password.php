@@ -63,6 +63,8 @@ if (isset($_POST ["add_symbol"])) {
 # VALIDATE INPUT
 
 #check if user enters a numeric value; if not, warn with error message.
+$value = isset($array['number_of_words']) ? $array['number_of_words'] : ''; // should be checking if index exists to remove "undefined index error"?
+$value = isset($array['form']) ? $array['form'] : ''; // should be checking if index exists to remove "undefined index error"?
 $number = $_POST['number_of_words'];
 $form_result = $_POST['form'];
 if (isset($form_result)){
