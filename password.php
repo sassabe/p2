@@ -24,29 +24,20 @@ $symbolsArray = [
 	];
 
 #variables
-	$error ="";
+	$error = NULL;
 	$password = "";
-	//$intValue ="";
-	//$count = $_POST['number_of_words'];
-	//$max_words = count($wordsArray) -1;
-	$number_of_words = 5;
-# validation for number of words
-if (isset($_POST['number_of_words'])) {
-	$number_of_words = $_POST['number_of_words'];
-/* 
-	if(is_int($intValue) && (1 <= $intValue) OR ($intValue <= 5)) {
-	 //valid
-		$number_of_words = $intValue;
-	} else{
-		$error = "Please enter a number between 2 and 5";
-		return;
-	//invalid
-	}*/
-} else {
-	$number_of_words = 5;
-}	
+	$number_of_words = 9;
 
-#Generate password: 
+
+		
+#GENERATE PASSWORD: 
+
+# gather number from form 
+if (isset($_POST['number_of_words']) && ($_POST['number_of_words'] > 2)) {
+	$number_of_words = $_POST['number_of_words'];
+} else {
+	$number_of_words = 2; //placesaver password with two words
+}
 
 #Create place-saver array to collect all array values
 $randomWords = array_rand($wordsArray, $number_of_words);
@@ -63,28 +54,21 @@ $password = substr($password, 0, -1);
 if (isset($_POST ["add_number"])) {
 		$password = $password.rand(0,9);
 	} 
+# add symbol if checked
 if (isset($_POST ["add_symbol"])) {
 	 	$password .= $symbolsArray[rand(0,5)];
 	 }
 
-#Check if value is between 2 and 5
 
+# VALIDATE INPUT
 
-# Validate input  not working
-
-#if user does not enter a numeric value, warn with error message.
-/*foreach($_POST as $key => $value) {
-
-if (!ctype_digit($value)) {
-	$error = "Please enter a number between 2 and 5";
-	return;
+#check if user enters a numeric value; if not, warn with error message.
+$number = $_POST['number_of_words'];
+$form_result = $_POST['form'];
+if (isset($form_result)){
+if (is_numeric($number) && $number >=2) {
+	echo 'The number you entered is ' . $number. '. This is a valid number.';
+}else {
+	echo '<div class="error">Please enter only numbers between 2 and 9.</div>';
 }
-#if user does not enter anything, warn with error message.
-	if (!empty($value)) {
-	$error = "Please enter a number between 2 and 5";
-	return;
 }
-
-}*/
-?>
-

@@ -10,8 +10,9 @@ Isabella Donadio's Project 2. xkcd style password generator in PHP.
 <http://>
 
 ## Details for teaching team
-...
+I ran into some problems with the validation initially, but I think they have been resolved. 
+My form validates for numeric input between 2 and 9, and does not allow input if not numeric. Input outside of 2 and 9, and non-numeric, generates an error message. 
 
 
 ## Outside code
-...
+I looked at code from http://www.learningaboutelectronics.com/Articles/How-to-perform-number-validation-in-PHP.php to set up the validation. 
