@@ -15,7 +15,7 @@
 	<p class="password"><?php echo $password; ?></p>
 	<div class="form_options">
 		<form action="index.php" method="POST">
-			<label for="number_of_words">Number of Words (1-9)</label>
+			<label for="number_of_words">Number of Words (2-9)</label>
 			<input type="text" maxlength="1" name="number_of_words" id="number">
 			<br>
 			<input type="checkbox" name="add_number" value="number"></input><label for="add_number">Add a number</label><br>

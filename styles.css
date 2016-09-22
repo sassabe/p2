@@ -29,3 +29,6 @@ button:hover {
 	border: solid 1px #1A4FA3;
 	font-size: 2em;
 }
+.error {
+	color: red;
+}
