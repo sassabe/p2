@@ -36,7 +36,7 @@
 	</div>
 	<div class="form_extras">
 		<p><a href="http://xkcd.com/936/">xkcd password strength</a></p>
-		<img src="images/unicorn-rhino.gif" alt="rhino-thinks-it's-a-unicorn">
+		<div class="image"><img src="images/unicorn-rhino.gif" alt="rhino-thinks-it's-a-unicorn"></div>
 	</div>
 </body>
 </html>

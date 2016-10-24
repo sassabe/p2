@@ -34,11 +34,12 @@ h1 {
 	font-family: 'Bungee Shade', cursive;
 	font-size: 3em;
 	margin: 5% 0%;
-}
-.main {
-	display: flex;
-	justify-content: center;
 	text-align: center;
+}
+
+.form_options {
+	display: flex;
+	justify-content: center; text-align: center;
 }
 button {
 	background-color: #1A4FA3;
@@ -48,6 +49,7 @@ button {
 	padding: .3em;
 	cursor: pointer;
 	font-family: 'Space Mono', monospace;
+
 }
 button:hover {
 	background-color: #143B7A;
@@ -56,6 +58,14 @@ button:hover {
 .password {
 	border: solid 1px #1A4FA3;
 	font-size: 2em;
+	text-align: center;
+}
+p {
+	text-align: center;
+}
+.image {
+	display: flex;
+	justify-content: center
 }
 .error {
 	color: red;
